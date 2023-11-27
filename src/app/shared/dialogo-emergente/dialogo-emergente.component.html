@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="field grid">
+        <span class="p-float-label mt-3 ml-1">
+            <input pInputText id="Titulo Reserva" [(ngModel)]="titulo" />
+            <label htmlFor="Titulo">Titulo</label>
+        </span>
+    </div>
+    <div class="field grid ">
+        <span class="p-float-label m-1">
+            <textarea id="float-input" rows="5" cols="40" pInputTextarea [(ngModel)]="descripcion"></textarea>
+            <label for="float-input">Descripcion</label>
+        </span>
+    </div>  
+    <p-button class="right-50" label="Ok" [outlined]="true" [rounded]="true" severity="OK" (onClick)="enviarInfo()"></p-button>  
+</div>
